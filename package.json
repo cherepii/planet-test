@@ -6,6 +6,7 @@
 		"type": "GitHub",
 		"url": "https://github.com/cherepii/planet-test.git"
 	},
+	"homepage": "/planet-test",
 	"dependencies": {
 		"@reduxjs/toolkit": "^1.9.3",
 		"@usedapp/core": "^1.2.6",
@@ -39,7 +40,9 @@
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
-		"eject": "react-scripts eject"
+		"eject": "react-scripts eject",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
 	},
 	"eslintConfig": {
 		"extends": [
