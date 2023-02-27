@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { FC, MouseEvent, memo, useState } from 'react'
 
+import planet from '../../assets/planet.png'
 import { usePlanetValues } from '../../hooks/usePlanetValues'
 
 import styles from './Planet.module.scss'
@@ -111,7 +112,7 @@ const Planet: FC<IProps> = memo(() => {
 					className={`${styles.circle__inner} ${styles.default}`}
 				>
 					<motion.img
-						src="../../assets/planet.png"
+						src={planet}
 						alt="planet"
 						className={styles.default}
 						draggable={false}
