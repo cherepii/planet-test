@@ -111,7 +111,7 @@ const Planet: FC<IProps> = memo(() => {
 					className={`${styles.circle__inner} ${styles.default}`}
 				>
 					<motion.img
-						src="/images/planet.png"
+						src="../../assets/planet.png"
 						alt="planet"
 						className={styles.default}
 						draggable={false}
