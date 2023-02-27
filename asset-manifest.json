@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5b73b132.css",
+    "main.js": "/static/js/main.7e8a6091.js",
+    "static/media/BebasNeue-Bold.ttf": "/static/media/BebasNeue-Bold.ea0a2d99a89950317a4f.ttf",
+    "static/media/BebasNeue-Regular.ttf": "/static/media/BebasNeue-Regular.aa140796def071b76415.ttf",
+    "static/media/AvenirNextCyr-Regular.ttf": "/static/media/AvenirNextCyr-Regular.d5515aff04ff81140f75.ttf",
+    "static/media/delete-cursor.svg": "/static/media/delete-cursor.c4a829006a180561e557.svg",
+    "index.html": "/index.html",
+    "main.5b73b132.css.map": "/static/css/main.5b73b132.css.map",
+    "main.7e8a6091.js.map": "/static/js/main.7e8a6091.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b73b132.css",
+    "static/js/main.7e8a6091.js"
+  ]
+}
