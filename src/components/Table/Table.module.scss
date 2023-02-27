@@ -1,0 +1,85 @@
+@import '../../globals/scss/variables';
+
+.wrapper {
+	table-layout: fixed;
+	border-collapse: collapse;
+	max-height: 590px;
+	width: 100%;
+	box-sizing: content-box;
+
+	> caption {
+		text-align: left;
+		font-weight: 700;
+		font-size: 36px;
+		margin-bottom: 20px;
+	}
+
+	tr {
+		&:not(:last-child) {
+			border-bottom: 1px solid #ffffff;
+		}
+	}
+
+	> thead {
+		> tr {
+			border-bottom: 1px solid #ffffff;
+		}
+
+		td {
+			text-align: left;
+		}
+	}
+
+	th,
+	td {
+		padding: 16px 24px 16px 0;
+	}
+
+	tbody {
+		overflow-x: hidden;
+		overflow-y: auto;
+		display: block;
+		width: 668px;
+		max-height: 590px;
+
+		> tr,
+		> tr > a {
+			display: table;
+			table-layout: fixed;
+			width: 100%;
+
+			&.active {
+				color: $accent;
+				user-select: none;
+				position: relative;
+			}
+
+			> td {
+				max-width: 195px;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				font-family: AvenirNext;
+				font-size: 14px;
+				line-height: 18px;
+			}
+		}
+
+		&::-webkit-scrollbar {
+			width: 2px;
+			background: transparent;
+			margin-left: 50px;
+
+			&-thumb {
+				background-color: $accent; /* цвет бегунка */
+				border-radius: 4px; /* округлось бегунка */
+				border: 3px solid transparent; /* отступ вокруг бегунка */
+			}
+		}
+	}
+}
+
+.skeletons {
+	width: 100%;
+	max-width: 668px;
+}

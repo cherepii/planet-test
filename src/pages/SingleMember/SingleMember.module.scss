@@ -1,0 +1,17 @@
+.wrapper {
+	padding: 96px 0;
+	position: relative;
+
+	.title {
+		font-weight: 700;
+		font-size: 48px;
+		margin-bottom: 48px;
+	}
+
+	.planet {
+		position: absolute;
+		z-index: 1;
+		top: 35px;
+		right: -17%;
+	}
+}

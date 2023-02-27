@@ -1,0 +1,46 @@
+@import '../../globals/scss/variables';
+
+.wrapper {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99999;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 48px 52px;
+		background: #262628;
+		max-width: 422px;
+		width: 100%;
+		cursor: default;
+
+		> h3 {
+			font-weight: 700;
+			font-size: 36px;
+			color: $accent;
+		}
+
+		> p {
+			font-size: 16px;
+			margin: 32px 0 52px;
+			font-family: AvenirNext;
+
+			> a {
+				color: $accent;
+				text-decoration: underline;
+				text-underline-offset: 3px;
+			}
+		}
+	}
+}

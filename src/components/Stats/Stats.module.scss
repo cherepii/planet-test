@@ -1,0 +1,40 @@
+@import '../../globals/scss/variables';
+
+.wrapper {
+	max-width: 200px;
+	width: 100%;
+	text-align: center;
+
+	> h4 {
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 120%;
+		letter-spacing: 1px;
+	}
+
+	.body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 42px;
+
+		&__item {
+			width: 100%;
+			&:not(:last-child) {
+				margin-bottom: 8px;
+				border-bottom: 0.5px solid #d2c4c4;
+			}
+
+			.coast {
+				font-size: 28px;
+				letter-spacing: 1px;
+				color: $accent;
+				font-weight: 700;
+			}
+			> span {
+				padding: 12px 0 8px;
+				display: block;
+			}
+		}
+	}
+}
